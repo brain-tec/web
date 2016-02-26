@@ -3,13 +3,14 @@
 # * help_online
 # 
 # Translators:
+# Ahmet Altınışık <aaltinisik@altinkaya.com.tr>, 2015-2016
 # Ahmet Altınışık <aaltinisik@altinkaya.com.tr>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: web (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-08 21:34+0000\n"
-"PO-Revision-Date: 2015-12-30 22:50+0000\n"
+"POT-Creation-Date: 2016-01-10 07:31+0000\n"
+"PO-Revision-Date: 2016-01-31 11:39+0000\n"
 "Last-Translator: Ahmet Altınışık <aaltinisik@altinkaya.com.tr>\n"
 "Language-Team: Turkish (http://www.transifex.com/oca/OCA-web-8-0/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -99,12 +100,12 @@ msgstr "%s yardımı"
 #. module: help_online
 #: model:res.groups,name:help_online.help_online_group_reader
 msgid "Help reader"
-msgstr ""
+msgstr "Yardım okuyanı"
 
 #. module: help_online
 #: model:res.groups,name:help_online.help_online_group_writer
 msgid "Help writer"
-msgstr ""
+msgstr "Yardım yazarı"
 
 #. module: help_online
 #: field:export.help.wizard,id:0 field:help.online,id:0
@@ -125,7 +126,7 @@ msgstr "İçe aktarma yardımı"
 #. module: help_online
 #: view:import.help.wizard:help_online.import_help_wizard_view
 msgid "Import Help Data"
-msgstr ""
+msgstr "Yardım verisini içe aktarma"
 
 #. module: help_online
 #: model:ir.ui.menu,name:help_online.menu_help_import
@@ -154,7 +155,7 @@ msgstr "Dışa aktarılacak veri yok !"
 #: code:addons/help_online/models/help_online.py:33
 #, python-format
 msgid "No page prefix parameter specified !"
-msgstr ""
+msgstr "Hiç sayfa ön-ek parametresi tanımlanmamış !"
 
 #. module: help_online
 #. openerp-web
@@ -195,7 +196,7 @@ msgstr "Bu sihirbaz online yardım ile alakalı bütün QWeb \ngörüntülerini 
 #: code:addons/help_online/models/export_help_wizard.py:297
 #, python-format
 msgid "Unable to write autobackup file in given directory: %s"
-msgstr ""
+msgstr "%s klasörüne otomatik yedek dosyası yazılamıyor"
 
 #. module: help_online
 #: view:ir.ui.view:help_online.view_view_search
