@@ -17,6 +17,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[support_branding](support_branding/) | 9.0.2.0.0 | Adds your branding to an Odoo instance
 [web_access_rule_buttons](web_access_rule_buttons/) | 9.0.1.0.0 | Disable Edit button if access rules prevent this action
 [web_dialog_size](web_dialog_size/) | 9.0.1.0.0 | A module that lets the user expand a dialog box to the full screen width.
 [web_duplicate_visibility](web_duplicate_visibility/) | 9.0.1.0.1 | Manage the duplicate button visibiliy
@@ -33,7 +34,9 @@ addon | version | summary
 [web_send_message_popup](web_send_message_popup/) | 9.0.1.0.0 | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 9.0.1.0.0 | Use the whole available screen width when displaying sheets
 [web_translate_dialog](web_translate_dialog/) | 9.0.1.0.0 | Easy-to-use pop-up to translate fields in several languages
+[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 9.0.2.0.0 | Allows you to dynamically color fields on tree views
 [web_tree_image](web_tree_image/) | 9.0.1.1.0 | Show images in tree views
+[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 9.0.1.0.0 | Open the linked resource when clicking on their name
 [web_widget_color](web_widget_color/) | 9.0.1.0.0 | Web Widget Color
 [web_widget_float_formula](web_widget_float_formula/) | 9.0.1.0.0 | Allow use of simple formulas in float fields
 [web_widget_image_download](web_widget_image_download/) | 9.0.1.0.0 | Allows to download any image from its widget
@@ -48,7 +51,6 @@ addon | version | summary
 --- | --- | ---
 [help_online](help_online/) | 8.0.1.0.0 (unported) | Help Online
 [help_popup](help_popup/) | 8.0.0.5.0 (unported) | Help Popup
-[support_branding](support_branding/) | 8.0.2.0.0 (unported) | Adds your branding to an Odoo instance
 [web_action_conditionable](web_action_conditionable/) | 8.0.0.1.0 (unported) | web_action_conditionable
 [web_advanced_search_x2x](web_advanced_search_x2x/) | 8.0.1.0.0 (unported) | Use a search widget in advanced search for x2x fields
 [web_ckeditor4](web_ckeditor4/) | 8.0.1.0.0 (unported) | Provides a widget for editing HTML fields using CKEditor 4.x
@@ -71,8 +73,6 @@ addon | version | summary
 [web_sheet_full_width_selective](web_sheet_full_width_selective/) | 8.0.0.1.0 (unported) | Show selected sheets with full width
 [web_shortcuts](web_shortcuts/) | 8.0.1.0.0 (unported) | Web Shortcuts
 [web_switch_company_warning](web_switch_company_warning/) | 8.0.0.1.0 (unported) | Show a warning if current company has been switched in another tab or window.
-[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 8.0.1.0.0 (unported) | web tree dynamic colored field
-[web_tree_many2one_clickable](web_tree_many2one_clickable/) | 8.0.1.0.0 (unported) | Clickable many2one fields for tree views
 [web_widget_datepicker_options](web_widget_datepicker_options/) | 8.0.1.0.0 (unported) | web_widget_datepicker_options
 [web_widget_text_markdown](web_widget_text_markdown/) | 8.0.1.0.0 (unported) | web_widget_text_markdown
 
