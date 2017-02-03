@@ -2,17 +2,25 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=============================
-Form view sheet at full width
-=============================
+====================
+List Range Selection
+====================
 
-This module was written to extend the functionality of the web client
-to get full width in the form view sheet.
+Enables selecting a range of records using the shift key.
 
-This module works in community edition and in enterprise edition.
+Configuration
+=============
+
+No configuration is needed.
 
 Usage
 =====
+
+To use this module, you need to:
+
+#. click a record;
+#. hold shift and click another record;
+#. you can repeat this operation as many times as you want.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
@@ -22,27 +30,17 @@ Bug Tracker
 ===========
 
 Bugs are tracked on `GitHub Issues
-<https://github.com/OCA/web/issues>`_. In case of trouble, please
+<https://github.com/OCA/162/issues>`_. In case of trouble, please
 check there if your issue has already been reported. If you spotted it first,
 help us smashing it by providing a detailed and welcomed feedback.
 
 Credits
 =======
 
-Images
-------
-
-* Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
-
-* Icon courtesy of http://www.picol.org/ (size_width.svg)
-
 Contributors
 ------------
 
-* Holger Brunn <hbrunn@therp.nl>
-* Nicolas JEUDY - Sudokeys (https://github.com/njeudy)
-* Stephane (SOLIBRE) <stephane@omerp.net>
-* Sylvain LE GAL (https://twitter.com/legalsylvain)
+* Dennis Sluijk <d.sluijk@onestein.nl>
 
 Maintainer
 ----------
@@ -57,4 +55,4 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-To contribute to this module, please visit http://odoo-community.org.
+To contribute to this module, please visit https://odoo-community.org.
