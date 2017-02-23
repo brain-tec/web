@@ -17,19 +17,22 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[help_online](help_online/) | 9.0.1.0.0 | Help Online
 [support_branding](support_branding/) | 9.0.2.0.0 | Adds your branding to an Odoo instance
 [web_access_rule_buttons](web_access_rule_buttons/) | 9.0.1.0.0 | Disable Edit button if access rules prevent this action
 [web_dialog_size](web_dialog_size/) | 9.0.1.0.0 | A module that lets the user expand a dialog box to the full screen width.
 [web_duplicate_visibility](web_duplicate_visibility/) | 9.0.1.0.1 | Manage the duplicate button visibiliy
 [web_easy_switch_company](web_easy_switch_company/) | 9.0.1.0.0 | Multicompany - Easy Switch Company
 [web_environment_ribbon](web_environment_ribbon/) | 9.0.1.0.0 | Web Environment Ribbon
-[web_export_view](web_export_view/) | 9.0.1.0.0 | Export Current View
+[web_export_view](web_export_view/) | 9.0.1.0.1 | Export Current View
 [web_favicon](web_favicon/) | 9.0.1.0.0 | Allows to set a custom shortcut icon (aka favicon)
 [web_hide_db_manager_link](web_hide_db_manager_link/) | 9.0.1.0.0 | Hide link to database manager in login screen
+[web_listview_custom_element_number](web_listview_custom_element_number/) | 9.0.1.0.0 | Allow users to set manually a quantity of items to display in a tree view
 [web_m2x_options](web_m2x_options/) | 9.0.1.0.0 | web_m2x_options
+[web_menu_collapsible](web_menu_collapsible/) | 9.0.1.0.0 | Foldable second level Odoo menu
 [web_notify](web_notify/) | 9.0.1.0.0 | Send notification messages to user
 [web_readonly_bypass](web_readonly_bypass/) | 9.0.1.0.1 | Allow to save onchange modifications to readonly fields
-[web_responsive](web_responsive/) | 9.0.1.0.0 | It provides a mobile compliant interface for Odoo Community web
+[web_responsive](web_responsive/) | 9.0.2.0.0 | It provides a mobile compliant interface for Odoo Community web
 [web_searchbar_full_width](web_searchbar_full_width/) | 9.0.1.0.0 | Show search bar in full screen width
 [web_send_message_popup](web_send_message_popup/) | 9.0.1.0.0 | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 9.0.1.0.0 | Use the whole available screen width when displaying sheets
@@ -44,12 +47,12 @@ addon | version | summary
 [web_widget_many2many_tags_multi_selection](web_widget_many2many_tags_multi_selection/) | 9.0.1.1.0 | Tags multiple selection
 [web_widget_timepicker](web_widget_timepicker/) | 9.0.1.0.0 | Web Timepicker Widget
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 9.0.1.0.0 | Show list fields as a matrix
+[web_x2many_delete_all](web_x2many_delete_all/) | 9.0.1.0.0 | Adds a button to x2many fields that removes all linked records
 
 Unported addons
 ---------------
 addon | version | summary
 --- | --- | ---
-[help_online](help_online/) | 8.0.1.0.0 (unported) | Help Online
 [help_popup](help_popup/) | 8.0.0.5.0 (unported) | Help Popup
 [web_action_conditionable](web_action_conditionable/) | 8.0.0.1.0 (unported) | web_action_conditionable
 [web_advanced_search_x2x](web_advanced_search_x2x/) | 8.0.1.0.0 (unported) | Use a search widget in advanced search for x2x fields
@@ -64,7 +67,6 @@ addon | version | summary
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 8.0.1.0.0 (unported) | Show a message box to users
 [web_ir_actions_act_window_page](web_ir_actions_act_window_page/) | 8.0.1.0.0 (unported) | Allows a developer to trigger a pager to show the previous or next next record in the form view
 [web_last_viewed_records](web_last_viewed_records/) | 8.0.1.0.0 (unported) | Last viewed records
-[web_listview_custom_element_number](web_listview_custom_element_number/) | 8.0.1.0.0 (unported) | Allow users to set manually a quantity of items to display in a tree view
 [web_menu_navbar_needaction](web_menu_navbar_needaction/) | 8.0.1.0.0 (unported) | Show the sum of submenus' needaction counters in main menu
 [web_option_auto_color](web_option_auto_color/) | 8.0.0.1.0 (unported) | Web Option Auto Color
 [web_polymorphic_many2one](web_polymorphic_many2one/) | 0.2 (unported) | Web Polymorphic Many2One
