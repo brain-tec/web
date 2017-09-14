@@ -2,37 +2,35 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-=============
-Shortcut Menu
-=============
+=======================
+Web Digitized Signature
+=======================
 
-Adds a button to the top menu which opens a menu containing the user's shortcuts.
+This module provides a widget for binary fields that allows to digitize a
+signature and store it as an image.
+
+As demonstration, it includes this widget at user level, so that we can store
+a signature image for each user.
 
 Configuration
 =============
 
-To configure this module, you need to:
-
-#. Go to any view;
-#. click on the star icon besides the title to add / remove a shortcut.
+#. To use this module, you need to add ``widget="signature"`` to your binary
+   field in your view.
+#. You can specifify signature dimensions like the following:
+   ``<field name="signature_image" widget="signature" width="400" height="100"/>``
 
 Usage
 =====
 
-To use this module, you need to:
+#. Go to *Settings > Users > Users*.
+#. Open one of the existing users.
+#. You can set a digital signature for it on the field "Signature".
 
-#. Click on the star icon in the right corner of the top menu;
-#. click the shortcut you want.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
    :target: https://runbot.odoo-community.org/runbot/162/10.0
-
-Known Issues
-============
-Clicking shortcut menu item sometimes doesn't trigger the left side submenu widget
-updating except reloading the whole page.
-Client side may raise TypeError exception randomly: this.active_view is null.
 
 Bug Tracker
 ===========
@@ -45,14 +43,16 @@ help us smashing it by providing a detailed and welcomed feedback.
 Credits
 =======
 
+Images
+------
+
+* Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
+
 Contributors
 ------------
 
-* Adrien Peiffer
-* Dennis Sluijk <d.sluijk@onestein.nl>
-* Odoo SA
-* Thomas Binsfeld <thomas.binsfeld@acsone.eu>
-* Henry Zhou (MAXodoo) <zhouhenry@live.com>
+* Jay Vora <jay.vora@serpentcs.com>
+* Vicent Cubells <vicent.cubells@tecnativa.com>
 
 Maintainer
 ----------
@@ -68,5 +68,3 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 To contribute to this module, please visit https://odoo-community.org.
-
-**This module is a port from Odoo SA and as such, it is not included in the OCA CLA. That means we do not have a copy of the copyright on it like all other OCA modules.**
