@@ -26,6 +26,8 @@ var signatureOverrides = {
 		try {
 			this.canvas = $('<canvas width="' + this.options.width + '" height="' +
 				this.options.height + '">' + '' + '</canvas>')[0];
+			// to reference this in one of the event listeners we have to store this into a different variable,
+			// because this inside the anonymous function wouldn't be the same.
 			var myself = this;
 			this.canvas.addEventListener("touchstart", function (event) {
 				// somehow the first attempt to create a mouse event and dispatch it didn't end up in _mouse(Start|Drag|Stop),
