@@ -28,7 +28,7 @@ var signatureOverrides = {
 				this.options.height + '">' + '' + '</canvas>')[0];
 			var myself = this;
 			this.canvas.addEventListener("touchstart", function (event) {
-				// somehow the first attempt to create a mouse event and dispatch it doesn't end up in _mouse(Start|Drag|Stop),
+				// somehow the first attempt to create a mouse event and dispatch it did't end up in _mouse(Start|Drag|Stop),
 				// so this code here is the same as in these functions but uses the touch coordinates
 				var touch = event.touches[0];
 				myself.offset = myself.element.offset();
