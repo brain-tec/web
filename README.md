@@ -1,6 +1,6 @@
 !This branch should only exist until the following change is merged into OCA/web!
 ------------------
-https://github.com/brain-tec/web/compare/8.0...brain-tec:8.0.project_VA_170
+https://github.com/brain-tec/web/pull/90
 
 
 [![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/162/8.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-web-162)
