@@ -1,3 +1,8 @@
+!This branch should only exist until the following change is merged into OCA/web!
+------------------
+https://github.com/brain-tec/web/compare/8.0...brain-tec:8.0.project_VA_170
+
+
 [![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/162/8.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-web-162)
 [![Build Status](https://travis-ci.org/OCA/web.svg?branch=8.0)](https://travis-ci.org/OCA/web)
 [![Coverage Status](https://coveralls.io/repos/OCA/web/badge.png?branch=8.0)](https://coveralls.io/r/OCA/web?branch=8.0)
