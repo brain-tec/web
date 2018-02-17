@@ -27,11 +27,14 @@
                         <h1>
                             <field name="name"/>
                         </h1>
+                        <group>
+                            <field name="category_id"/>
+                            <field name="user_id"/>
+                        </group>
                         <group col="4">
                             <separator string="Display" colspan="4"/>
                             <field name="background_color" widget="color"/>
                             <field name="font_color" widget="color"/>
-                            <field name="user_id"/>
                             <separator string="Technical Informations" colspan="4"/>
                             <field name="model_id"/>
                             <field name="action_id"/>
@@ -85,12 +88,14 @@
             </field>
         </record>
 
-        <!-- CRM Lead Kanban View  -->
+        <!-- Kanban View  -->
        <record model="ir.ui.view" id="dashboard_tile_tile_kanban_view">
             <field name="model">tile.tile</field>
             <field name="arch" type="xml">
-                <kanban edit="false" create="false">
+                <kanban default_group_by="category_id" create="false" class="o_kanban_small_column">
                     <field name="name"/>
+                    <field name="sequence"/>
+                    <field name="category_id"/>
                     <field name="domain"/>
                     <field name="model_id"/>
                     <field name="action_id"/>
@@ -103,7 +108,21 @@
 
                     <templates>
                         <t t-name="kanban-box">
-                            <div t-attf-class="oe_dashboard_tile oe_kanban_global_click" t-attf-style="background-color:#{record.background_color.raw_value}" >
+                            <div class="oe_dashboard_tile oe_kanban_global_click">
+                            <div class="tile_background" t-attf-style="background-color:#{record.background_color.raw_value}">
+
+                                <div class="o_dropdown_kanban dropdown" groups="base.group_no_one">
+                                    <a class="dropdown-toggle btn" data-toggle="dropdown" href="#">
+                                        <span class="fa fa-bars fa-lg"/>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <t t-if="widget.editable">
+                                            <li><a type="edit">Edit</a></li>
+                                            <li><a type="delete">Delete</a></li>
+                                        </t>
+                                    </ul>
+                                </div>
+
                                 <div class="oe_kanban_content">
                                     <a type="object" name="open_link" args="[]" t-attf-style="color:#{record.font_color.raw_value};">
                                         <div style="height:100%;" t-att-class="record.secondary_function.raw_value and 'with_secondary' or 'simple'">
@@ -123,9 +142,36 @@
                                 </div>
                                 <div class="oe_clear"></div>
                             </div>
+                            </div>
                         </t>
                     </templates>
                 </kanban>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="dashboard_tile_category_form_view">
+            <field name="model">tile.category</field>
+            <field name="arch" type="xml">
+                <form string="Category">
+                    <group col="4" colspan="4">
+                        <field name="name"/>
+	                    <field name="sequence"/>
+	                    <field name="fold"/>
+                    </group>
+                </form>
+
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="dashboard_tile_category_tree_view">
+            <field name="model">tile.category</field>
+            <field name="arch" type="xml">
+                <tree string="Tile Categories" editable="bottom">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="fold"/>
+                </tree>
             </field>
         </record>
 
@@ -145,7 +191,7 @@
             <field name="name">Dashboard</field>
             <field name="res_model">tile.tile</field>
             <field name="view_type">form</field>
-            <field name="view_mode">kanban</field>
+            <field name="view_mode">kanban,form</field>
             <field name="domain">['|',('user_id','=',False),('user_id','=',uid)]</field>
             <field name="view_id" ref="dashboard_tile_tile_tree_view"/>
         </record>

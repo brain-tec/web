@@ -77,6 +77,7 @@ class TileTile(models.Model):
     # Column Section
     name = fields.Char(required=True)
     sequence = fields.Integer(default=0, required=True)
+    category_id = fields.Many2one('tile.category', 'Category')
     user_id = fields.Many2one('res.users', 'User')
     background_color = fields.Char(default='#0E6C7E', oldname='color')
     font_color = fields.Char(default='#FFFFFF')
@@ -155,35 +156,31 @@ class TileTile(models.Model):
             self.primary_value = self.secondary_value = 'ERR!'
             self.error = str(e)
             return
-        if any([
-            self.primary_function and
-            self.primary_function != 'count',
-            self.secondary_function and
-            self.secondary_function != 'count'
-        ]):
-            records = model.search(eval(domain, eval_context))
+        fields = [f.name for f in [
+            self.primary_field_id, self.secondary_field_id] if f]
+        read_vals = fields and\
+            model.search_read(eval(domain, eval_context), fields) or []
         for f in ['primary_', 'secondary_']:
             f_function = f + 'function'
             f_field_id = f + 'field_id'
             f_format = f + 'format'
             f_value = f + 'value'
             value = 0
-            if self[f_function] == 'count':
-                value = count
-            elif self[f_function]:
-                func = FIELD_FUNCTIONS[self[f_function]]['func']
-                if func and self[f_field_id] and count:
-                    vals = [x[self[f_field_id].name] for x in records]
+            if not self[f_function]:
+                self[f_value] = False
+            else:
+                if self[f_function] == 'count':
+                    value = count
+                else:
+                    func = FIELD_FUNCTIONS[self[f_function]]['func']
+                    vals = [x[self[f_field_id].name] for x in read_vals]
                     value = func(vals)
-            if self[f_function]:
                 try:
                     self[f_value] = (self[f_format] or '{:,}').format(value)
                 except ValueError as e:
                     self[f_value] = 'F_ERR!'
                     self.error = str(e)
                     return
-            else:
-                self[f_value] = False
 
     @api.one
     @api.onchange('primary_function', 'primary_field_id',
