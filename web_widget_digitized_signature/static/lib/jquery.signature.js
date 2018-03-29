@@ -40,13 +40,13 @@ var signatureOverrides = {
 					myself._round(touch.clientY - myself.offset.top)];
 				myself.curLine = [myself.lastPoint];
 				myself.lines.push(myself.curLine);
-			}, false);
+			}, true);
 
 			this.canvas.addEventListener("touchend", function(event) {
 				myself.lastPoint = null;
 				myself.curLine = null;
 				myself._changed(event);
-			}, false);
+			}, true);
 
 			this.canvas.addEventListener("touchmove", function(event) {
 				var touch = event.touches[0];
@@ -58,7 +58,8 @@ var signatureOverrides = {
 				myself.ctx.lineTo(point[0], point[1]);
 				myself.ctx.stroke();
 				myself.lastPoint = point;
-			}, false);
+                                event.preventDefault();
+			}, true);
 
 		 	this.element.prepend(this.canvas);
 		 	this.element.find('img').remove();
