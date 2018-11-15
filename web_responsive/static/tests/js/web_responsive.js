@@ -1,3 +1,4 @@
+/* global QUnit */
 /* Copyright 2016 LasLabs Inc.
  * License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). */
 
@@ -117,35 +118,6 @@ odoo.define('web_responsive.test', function(require) {
         }
     );
 
-    QUnit.test('It should return keybuffer + new key',
-        function(assert) {
-            assert.expect(1);
-
-            this.drawer.keyBuffer = 'TES';
-            var res = this.drawer.handleKeyBuffer(84);
-            assert.equal(res, 'TEST');
-        }
-    );
-
-    QUnit.test('It should clear keybuffer after timeout',
-        function(assert) {
-            assert.expect(1);
-
-            this.drawer.keyBuffer = 'TES';
-            this.drawer.keyBufferTime = 10;
-            this.drawer.handleKeyBuffer(84);
-
-            var self = this;
-            var d = $.Deferred();
-            setTimeout(function() {
-                assert.equal(self.drawer.keyBuffer, "");
-                d.resolve();
-            }, 100);
-
-            return d;
-        }
-    );
-
     QUnit.test('It should trigger core bus event for drawer close',
         function(assert) {
             assert.expect(1);
@@ -223,7 +195,7 @@ odoo.define('web_responsive.test', function(require) {
 
             var $appLink = $('#a_1'),
                 $expect = $('#a_2'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.RIGHT
                 );
 
@@ -238,7 +210,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#a_2'),
                 $expect = $('#a_1'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.LEFT
                 );
             assert.equal($res[0].id, $expect[0].id);
@@ -252,7 +224,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#a_1'),
                 $expect = $('#a_0'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.UP
                 );
             assert.equal($res[0].id, $expect[0].id);
@@ -266,7 +238,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#a_1'),
                 $expect = $('#a_2'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.DOWN
                 );
             assert.equal($res[0].id, $expect[0].id);
@@ -280,7 +252,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#b_2'),
                 $expect = $('#a_0'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.RIGHT
                 );
             assert.equal($res[0].id, $expect[0].id);
@@ -294,7 +266,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#a_0'),
                 $expect = $('#a_2'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.UP
                 );
             assert.equal($res[0].id, $expect[0].id);
@@ -308,7 +280,7 @@ odoo.define('web_responsive.test', function(require) {
             this.linkGrid();
             var $appLink = $('#a_2'),
                 $expect = $('#a_0'),
-                $res = this.drawer.findAdjacentAppLink(
+                $res = this.drawer.findAdjacentLink(
                     $appLink, this.drawer.DOWN
                 );
             assert.equal($res[0].id, $expect[0].id);
