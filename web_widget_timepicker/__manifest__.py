@@ -1,4 +1,4 @@
-# Copyright 2016 Vividlab (<http://www.vividlab.de>)
+# Copyright 2020 brain-tec AG (<http://www.vividlab.de>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "Web Timepicker Widget",
@@ -6,7 +6,8 @@
     "author": "VividLab, "
               "Kaushal Prajapati, "
               "Alexandre Díaz, "
-              "Odoo Community Association (OCA)",
+              "Odoo Community Association (OCA)"
+              "Alex Esteves",
     "license": "AGPL-3",
     "category": "Web",
     "website": "https://github.com/OCA/web/",
