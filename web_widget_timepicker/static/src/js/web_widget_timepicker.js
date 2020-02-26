@@ -1,6 +1,7 @@
 /* Copyright 2016 Vividlab <http://www.vividlab.de>
  * Copyright 2017 Kaushal Prajapati <kbprajapati@live.com>
  * Copyright 2019 Alexandre Díaz <dev@redneboa.es>
+ * Copyright 2020 Alex Esteves <alex.esteves@braintec-group.com>
  * License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). */
 odoo.define('web_widget_timepicker', function (require) {
     'use strict';
