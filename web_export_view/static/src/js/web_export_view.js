@@ -4,6 +4,7 @@ odoo.define('web_export_view', function (require) {
     var core = require('web.core');
     var Sidebar = require('web.Sidebar');
     var QWeb = core.qweb;
+    var formats = require('web.formats');
 
     var _t = core._t;
 
@@ -76,9 +77,12 @@ odoo.define('web_export_view', function (require) {
                                     // Remove non-numeric characters
                                     .replace(/[^\d\.-]/g, "")
                                 ));
-                            }
-                            else {
-                                export_row.push(text);
+                            } else {
+                                if ($cell.hasClass('o_float_time_cell')) {
+                                    export_row.push(formats.parse_value(text, {type: "float_time", digits: 2}));
+                                } else {
+                                    export_row.push(text);
+                                }
                             }
                         }
                     });
