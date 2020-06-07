@@ -14,10 +14,10 @@ Progressive web application
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fweb-lightgray.png?logo=github
-    :target: https://github.com/OCA/web/tree/12.0/web_pwa
+    :target: https://github.com/OCA/web/tree/12.0/web_pwa_oca
     :alt: OCA/web
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/web-12-0/web-12-0-web_pwa
+    :target: https://translation.odoo-community.org/projects/web-12-0/web-12-0-web_pwa_oca
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runbot-Try%20me-875A7B.png
     :target: https://runbot.odoo-community.org/runbot/162/12.0
@@ -53,6 +53,13 @@ In Chrome, a Progressive Web App can either be installed through the three-dot c
 
 This module also provides a "Install PWA" link in Odoo user menu.
 
+In case you previously installed `web_pwa`, run the following steps with `odoo shell`, after having installed `openupgradelib`:
+
+
+>>> from openupgradelib import openupgrade
+>>> openupgrade.update_module_names(env.cr, [('web_pwa', 'web_pwa_oca')], merge_modules=False)
+>>> env.cr.commit()
+
 Configuration
 =============
 
@@ -60,12 +67,12 @@ The following system parameters con be set to customize the appearance of the ap
 
 * pwa.manifest.name (defaults to "Odoo PWA")
 * pwa.manifest.short_name (defaults to "Odoo PWA")
-* pwa.manifest.icon128x128 (defaults to "/web_pwa/static/img/icons/icon-128x128.png")
-* pwa.manifest.icon144x144 (defaults to "/web_pwa/static/img/icons/icon-144x144.png")
-* pwa.manifest.icon152x152 (defaults to "/web_pwa/static/img/icons/icon-152x152.png")
-* pwa.manifest.icon192x192 (defaults to "/web_pwa/static/img/icons/icon-192x192.png")
-* pwa.manifest.icon256x256 (defaults to "/web_pwa/static/img/icons/icon-256x256.png")
-* pwa.manifest.icon512x512 (defaults to "/web_pwa/static/img/icons/icon-512x512.png")
+* pwa.manifest.icon128x128 (defaults to "/web_pwa_oca/static/img/icons/icon-128x128.png")
+* pwa.manifest.icon144x144 (defaults to "/web_pwa_oca/static/img/icons/icon-144x144.png")
+* pwa.manifest.icon152x152 (defaults to "/web_pwa_oca/static/img/icons/icon-152x152.png")
+* pwa.manifest.icon192x192 (defaults to "/web_pwa_oca/static/img/icons/icon-192x192.png")
+* pwa.manifest.icon256x256 (defaults to "/web_pwa_oca/static/img/icons/icon-256x256.png")
+* pwa.manifest.icon512x512 (defaults to "/web_pwa_oca/static/img/icons/icon-512x512.png")
 
 Known issues / Roadmap
 ======================
@@ -82,7 +89,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/web/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us smashing it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/web/issues/new?body=module:%20web_pwa%0Aversion:%2012.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/web/issues/new?body=module:%20web_pwa_oca%0Aversion:%2012.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -122,6 +129,6 @@ Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
 
 |maintainer-eLBati| 
 
-This module is part of the `OCA/web <https://github.com/OCA/web/tree/12.0/web_pwa>`_ project on GitHub.
+This module is part of the `OCA/web <https://github.com/OCA/web/tree/12.0/web_pwa_oca>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.
