@@ -6,7 +6,7 @@
 {
     "name": "Web Responsive",
     "summary": "Responsive web client, community-supported",
-    "version": "13.0.2.4.1",
+    "version": "13.0.2.5.0",
     "category": "Website",
     "website": "https://github.com/OCA/web",
     "author": "LasLabs, Tecnativa, " "Odoo Community Association (OCA)",
@@ -19,6 +19,7 @@
     "qweb": [
         "static/src/xml/apps.xml",
         "static/src/xml/form_view.xml",
+        "static/src/xml/menu.xml",
         "static/src/xml/navbar.xml",
         "static/src/xml/document_viewer.xml",
         "static/src/xml/discuss.xml",
