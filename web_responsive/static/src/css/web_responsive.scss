@@ -69,6 +69,7 @@ $chatter_zone_width: 35%;
         .o_menu_sections.show {
             @include full-screen-dropdown();
             background-color: $dropdown-bg;
+            overflow: auto;
 
             .show {
                 display: flex;
@@ -657,6 +658,28 @@ html .o_web_client .o_action_manager .o_action {
             }
             tfoot tr:nth-child(1) td {
                 background-color: $o-list-footer-bg-color;
+            }
+        }
+    }
+}
+
+// Big checkboxes
+.o_list_view {
+    .custom-checkbox:not(.o_boolean_toggle) {
+        margin-right: 10px;
+
+        .custom-control-label {
+            top: -6px;
+
+            &::after {
+                width: 24px;
+                height: 24px;
+            }
+            &::before {
+                outline: none !important;
+                border: 1px solid #4c4c4c;
+                width: 24px;
+                height: 24px;
             }
         }
     }
