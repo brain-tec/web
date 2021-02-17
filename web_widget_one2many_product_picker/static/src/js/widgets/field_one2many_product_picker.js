@@ -270,7 +270,11 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
             return $.Deferred(function (d) {
                 self._getSearchRecords().then(function () {
                     self.renderer.$el.scrollTop(0);
-                    self.renderer._renderView().then(d.resolve);
+                    self.renderer._renderView().then(function (virtualStateDefs) {
+                        virtualStateDefs.then(function () {
+                            d.resolve();
+                        });
+                    });
                 });
             });
         },
@@ -352,7 +356,8 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
                     if (self.renderer) {
                         self.renderer.updateSearchData(
                             self._searchRecords,
-                            self._lastSearchRecordsCount
+                            self._lastSearchRecordsCount,
+                            self._activeSearchGroup
                         );
                     }
                     d.resolve(results);
@@ -432,6 +437,7 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
                     price_unit: "price_unit",
                     discount: "discount",
                 },
+                auto_save: false,
             };
         },
 
@@ -546,8 +552,11 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
          * @private
          */
         _onClickSearchEraser: function () {
+            var self = this;
             this._clearSearchInput();
-            this.doRenderSearchRecords();
+            this.doRenderSearchRecords().then(function () {
+                self.$searchInput.focus();
+            });
         },
 
         /**
@@ -571,8 +580,20 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
          * @param {CustomEvent} evt
          */
         _onCreateQuickRecord: function (evt) {
+            var self = this;
             this.parent_controller.model.setPureVirtual(evt.data.id, false);
-            this._setValue({operation: "ADD", id: evt.data.id});
+            if (!self.options.auto_save) {
+                self.parent_controller.model.updateRecordContext(evt.data.id, {
+                    product_picker_modified: true,
+                });
+            }
+            this._setValue({operation: "ADD", id: evt.data.id}).then(function () {
+                if (self.options.auto_save) {
+                    self.parent_controller.saveRecord(undefined, {stayInEdit: true}).then(function () {
+                        self.renderer.updateState(self.value);
+                    });
+                }
+            });
         },
 
         /**
@@ -582,7 +603,19 @@ odoo.define("web_widget_one2many_product_picker.FieldOne2ManyProductPicker", fun
          * @param {CustomEevent} evt
          */
         _onUpdateQuickRecord: function (evt) {
-            this._setValue({operation: "UPDATE", id: evt.data.id, data: evt.data.data});
+            var self = this;
+            if (!self.options.auto_save) {
+                self.parent_controller.model.updateRecordContext(evt.data.id, {
+                    product_picker_modified: true,
+                });
+            }
+            this._setValue({operation: "UPDATE", id: evt.data.id, data: evt.data.data}).then(function () {
+                if (self.options.auto_save) {
+                    self.parent_controller.saveRecord(undefined, {stayInEdit: true}).then(function () {
+                        self.renderer.updateState(self.value);
+                    });
+                }
+            });
         },
 
         /**
