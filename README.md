@@ -19,13 +19,18 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[web_copy_confirm](web_copy_confirm/) | 14.0.1.0.0 | Show confirmation dialogue before copying records
 [web_dialog_size](web_dialog_size/) | 14.0.1.0.0 | A module that lets the user expand a dialog box to the full screen width.
 [web_domain_field](web_domain_field/) | 14.0.1.0.0 | Use computed field as domain
 [web_environment_ribbon](web_environment_ribbon/) | 14.0.1.0.0 | Web Environment Ribbon
 [web_m2x_options](web_m2x_options/) | 14.0.1.0.0 | web_m2x_options
 [web_notify](web_notify/) | 14.0.1.0.0 | Send notification messages to user
-[web_responsive](web_responsive/) | 14.0.1.0.0 | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 14.0.1.0.1 | Responsive web client, community-supported
+[web_sheet_full_width](web_sheet_full_width/) | 14.0.1.0.1 | Use the whole available screen width when displaying sheets
 [web_timeline](web_timeline/) | 14.0.1.0.0 | Interactive visualization chart to show events in time
+[web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 14.0.1.0.0 | Allows you to dynamically color fields on tree views
+[web_tree_image_tooltip](web_tree_image_tooltip/) | 14.0.1.0.0 | Show images in tree views via tooltip
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 14.0.1.0.0 | This widget allows to display charts using Bokeh library.
 [web_widget_x2many_2d_matrix](web_widget_x2many_2d_matrix/) | 14.0.1.0.0 | Show list fields as a matrix
 
 [//]: # (end addons)
