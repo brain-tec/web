@@ -1,10 +1,16 @@
 .o_form_view{
     .o_form_sheet_bg .o_form_sheet{
-        margin: @padding-base-horizontal;
+        margin: $input-padding-x;
         max-width: none;
         width: auto;
     }
     .oe_chatter{
         max-width: none;
     }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: none;
+  }
 }
