@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo12-addon-web_action_conditionable',
+        'odoo12-addon-web_advanced_filter',
         'odoo12-addon-web_advanced_search',
         'odoo12-addon-web_advanced_search_wildcard',
         'odoo12-addon-web_calendar_slot_duration',
@@ -40,6 +41,7 @@ setuptools.setup(
         'odoo12-addon-web_pwa_oca',
         'odoo12-addon-web_refresher',
         'odoo12-addon-web_responsive',
+        'odoo12-addon-web_responsive_company',
         'odoo12-addon-web_search_with_and',
         'odoo12-addon-web_searchbar_full_width',
         'odoo12-addon-web_send_message_popup',
