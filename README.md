@@ -51,12 +51,13 @@ addon | version | maintainers | summary
 [web_send_message_popup](web_send_message_popup/) | 13.0.1.0.0 |  | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 13.0.1.0.0 |  | Use the whole available screen width when displaying sheets
 [web_timeline](web_timeline/) | 13.0.1.1.1 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
-[web_translate_dialog](web_translate_dialog/) | 13.0.1.0.0 |  | Easy-to-use pop-up to translate fields in several languages
+[web_translate_dialog](web_translate_dialog/) | 13.0.1.1.0 |  | Easy-to-use pop-up to translate fields in several languages
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 13.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 13.0.1.0.0 |  | Show images in tree views via tooltip
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 13.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_view_calendar_list](web_view_calendar_list/) | 13.0.1.0.0 |  | Show calendars as a List
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 13.0.1.0.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | This widget allows to display charts using Bokeh library.
+[web_widget_child_selector](web_widget_child_selector/) | 13.0.1.0.0 |  | Widget used for navigation on hierarchy fields
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 13.0.1.0.2 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 13.0.1.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_dropdown_dynamic_example](web_widget_dropdown_dynamic_example/) | 13.0.1.0.0 |  | Demonstration of web_widget_dropdown_dynamic
