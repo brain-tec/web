@@ -39,6 +39,7 @@ addon | version | maintainers | summary
 [web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 14.0.1.0.0 |  | Enables reload of the current view via ActionManager
 [web_listview_range_select](web_listview_range_select/) | 14.0.1.0.0 |  | Enables selecting a range of records using the shift key
 [web_m2x_options](web_m2x_options/) | 14.0.1.0.0 |  | web_m2x_options
+[web_m2x_options_manager](web_m2x_options_manager/) | 14.0.1.0.0 |  | Adds an interface to manage the "Create" and "Create and Edit" options for specific models and fields.
 [web_no_bubble](web_no_bubble/) | 14.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 14.0.1.0.0 |  | Send notification messages to user
 [web_refresher](web_refresher/) | 14.0.1.0.0 |  | Web Refresher
@@ -52,6 +53,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 14.0.1.0.1 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 14.0.2.3.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_char_size](web_widget_char_size/) | 14.0.1.0.1 |  | Add size option to Char widget
+[web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 14.0.1.0.0 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 14.0.1.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_many2one_simple](web_widget_many2one_simple/) | 14.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Simple many2one widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 14.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
