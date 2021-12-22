@@ -4,7 +4,7 @@
 {
     "name": "Overview Dashboard (Tiles)",
     "summary": "Add Overview Dashboards with Tiles",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "depends": ["web", "board", "mail", "web_widget_color"],
     "author": "initOS GmbH & Co. KG, "
     "GRAP, "
@@ -16,6 +16,7 @@
     "data": [
         "security/ir.model.access.csv",
         "security/ir_rule.xml",
+        "views/templates.xml",
         "views/menu.xml",
         "views/tile_tile.xml",
         "views/tile_category.xml",
@@ -24,5 +25,4 @@
         "demo/tile_category.xml",
         "demo/tile_tile.xml",
     ],
-    "qweb": ["static/src/xml/web_dashboard_tile.xml"],
 }
