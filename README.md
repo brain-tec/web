@@ -35,7 +35,7 @@ addon | version | maintainers | summary
 [web_dialog_size](web_dialog_size/) | 14.0.1.0.0 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 14.0.1.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 14.0.1.0.0 |  | Use computed field as domain
-[web_drop_target](web_drop_target/) | 14.0.1.0.0 |  | Allows to drag files into Odoo
+[web_drop_target](web_drop_target/) | 14.0.1.0.1 |  | Allows to drag files into Odoo
 [web_environment_ribbon](web_environment_ribbon/) | 14.0.1.0.0 |  | Web Environment Ribbon
 [web_group_expand](web_group_expand/) | 14.0.1.0.0 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 14.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
@@ -58,7 +58,7 @@ addon | version | maintainers | summary
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 14.0.1.0.1 |  | Open the linked resource when clicking on their name
 [web_widget_bokeh_chart](web_widget_bokeh_chart/) | 14.0.2.3.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | This widget allows to display charts using Bokeh library.
 [web_widget_char_size](web_widget_char_size/) | 14.0.1.0.1 |  | Add size option to Char widget
-[web_widget_ckeditor](web_widget_ckeditor/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Provides a widget for editing HTML fields using CKEditor
+[web_widget_ckeditor](web_widget_ckeditor/) | 14.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Provides a widget for editing HTML fields using CKEditor
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 14.0.1.0.0 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 14.0.1.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_image_download](web_widget_image_download/) | 14.0.1.0.0 |  | Allows to download any image from its widget
