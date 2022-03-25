@@ -17,6 +17,13 @@ msgstr ""
 #. openerp-web
 #: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
 #, python-format
+msgid "Accept"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
 msgid "Add"
 msgstr ""
 
@@ -28,6 +35,11 @@ msgid "All"
 msgstr ""
 
 #. module: web_widget_one2many_product_picker
+#: model:ir.model,name:web_widget_one2many_product_picker.model_base
+msgid "Base"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
 #. openerp-web
 #: code:addons/web_widget_one2many_product_picker/static/src/js/widgets/field_one2many_product_picker.js:0
 #, python-format
@@ -35,10 +47,37 @@ msgid "By Name"
 msgstr ""
 
 #. module: web_widget_one2many_product_picker
+#: code:addons/web_widget_one2many_product_picker/models/base.py:0
+#, python-format
+msgid "Can't create the %s: Duplicated product! (Already in database)"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
+#: code:addons/web_widget_one2many_product_picker/models/base.py:0
+#, python-format
+msgid "Can't create the %s: Duplicated product! (Inside query)"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker_quick_create.xml:0
+#, python-format
+msgid "Discard"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
 #. openerp-web
 #: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
 #, python-format
 msgid "Groups"
+msgstr ""
+
+#. module: web_widget_one2many_product_picker
+#. openerp-web
+#: code:addons/web_widget_one2many_product_picker/static/src/xml/one2many_product_picker.xml:0
+#, python-format
+msgid "LOADING..."
 msgstr ""
 
 #. module: web_widget_one2many_product_picker
