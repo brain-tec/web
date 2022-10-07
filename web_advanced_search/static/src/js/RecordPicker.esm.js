@@ -17,7 +17,7 @@ export const FakeMany2oneFieldWidget = FieldMany2One.extend(FieldManagerMixin, {
         this.componentAdapter = parent;
         const options = this.componentAdapter.props.attrs;
         // Create a dummy record with only a dummy m2o field to search on
-        const model = new BasicModel("dummy");
+        const model = new BasicModel(parent);
         const params = {
             fieldNames: ["dummy"],
             modelName: "dummy",
@@ -63,7 +63,7 @@ export const FakeMany2oneFieldWidget = FieldMany2One.extend(FieldManagerMixin, {
      * @override
      */
     _confirmChange: function (id, fields, event) {
-        this.componentAdapter.trigger("change", event.data.changes[fields[0]]);
+        this.componentAdapter.trigger("change", this._get_record(this.model).data[fields[0]].data);
         this.dataPointID = id;
         return this.reset(this._get_record(this.model), event);
     },
