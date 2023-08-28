@@ -90,6 +90,16 @@ export const FakeMany2oneFieldWidget = FieldMany2One.extend(FieldManagerMixin, {
         return this.reset(this._get_record(this.model), event);
     },
     /**
+     * Stop propagation of the autocompleteselect event.
+     * Otherwise, the filter's dropdown will be closed after a selection.
+     *
+     * @override to stop propagating autocompleteselect event
+     */
+    start: function () {
+        this._super(...arguments);
+        this.$input.on("autocompleteselect", (event) => event.stopPropagation());
+    },
+    /**
      * Stop propagation of the 'Search more..' dialog click event.
      * Otherwise, the filter's dropdown will be closed after a selection.
      *
