@@ -7,6 +7,7 @@ import FieldManagerMixin from "web.FieldManagerMixin";
 import {FieldMany2One} from "web.relational_fields";
 import {SelectCreateDialog} from "web.view_dialogs";
 import {patch} from "@web/core/utils/patch";
+import {session} from "@web/session";
 
 const {Component, xml} = owl;
 
@@ -14,12 +15,16 @@ patch(Dropdown.prototype, "dropdown", {
     onWindowClicked(ev) {
         // This patch is created to prevent the closing of the Filter menu
         // when a selection is made in the RecordPicker
-        if (
-            $(ev.target.closest("ul.dropdown-menu")).attr("id") !== undefined &&
-            $(ev.target.closest("ul.dropdown-menu")).attr("id") ===
-                $("body > ul.dropdown-menu").attr("id")
-        ) {
-            return;
+        if ($(ev.target.closest("ul.dropdown-menu")).attr("id") !== undefined) {
+            const dropdown = $("body > ul.dropdown-menu");
+            for (let i = 0; i < dropdown.length; i++) {
+                if (
+                    $(ev.target.closest("ul.dropdown-menu")).attr("id") ===
+                    $(dropdown[i]).attr("id")
+                ) {
+                    return;
+                }
+            }
         }
         this._super(ev);
     },
@@ -118,6 +123,39 @@ export const FakeMany2oneFieldWidget = FieldMany2One.extend(FieldManagerMixin, {
                 .addEventListener("click", (event) => event.stopPropagation())
         );
         return dialog.open();
+    },
+    _onFieldChanged: function (event) {
+        const self = this;
+        event.stopPropagation();
+        if (event.data.changes.dummy.display_name === undefined) {
+            return this._rpc({
+                model: this.field.relation,
+                method: "name_get",
+                args: [event.data.changes.dummy.id],
+                context: session.user_context,
+            }).then(function (result) {
+                event.data.changes.dummy.display_name = result[0][1];
+                return (
+                    self
+                        ._applyChanges(
+                            event.data.dataPointID,
+                            event.data.changes,
+                            event
+                        )
+                        // eslint-disable-next-line no-empty-function
+                        .then(event.data.onSuccess || function () {})
+                        // eslint-disable-next-line no-empty-function
+                        .guardedCatch(event.data.onFailure || function () {})
+                );
+            });
+        }
+        return (
+            this._applyChanges(event.data.dataPointID, event.data.changes, event)
+                // eslint-disable-next-line no-empty-function
+                .then(event.data.onSuccess || function () {})
+                // eslint-disable-next-line no-empty-function
+                .guardedCatch(event.data.onFailure || function () {})
+        );
     },
 });
 
