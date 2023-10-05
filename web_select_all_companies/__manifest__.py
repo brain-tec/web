@@ -11,9 +11,11 @@
     "license": "LGPL-3",
     "depends": ["web"],
     "assets": {
+        "web.assets_qweb": [
+            "web_select_all_companies/static/src/xml/switch_all_company_menu.xml",
+        ],
         "web.assets_backend": [
             "web_select_all_companies/static/src/scss/switch_all_company_menu.scss",
-            "web_select_all_companies/static/src/xml/switch_all_company_menu.xml",
             "web_select_all_companies/static/src/js/switch_all_company_menu.esm.js",
         ],
     },
