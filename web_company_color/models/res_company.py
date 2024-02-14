@@ -15,6 +15,8 @@ class ResCompany(models.Model):
     _inherit = "res.company"
 
     SCSS_TEMPLATE = """
+        @import "functions";
+        @import "variables";
         .o_main_navbar {
           background: %(color_navbar_bg)s !important;
           background-color: %(color_navbar_bg)s !important;
