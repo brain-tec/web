@@ -5,7 +5,7 @@
 {
     'name': "Web Company Title",
     'category': "web",
-    'version': "11.0.1.0.1",
+    'version': "11.0.1.0.2",
     "author": "Alexandre Díaz, "
               "Odoo Community Association (OCA)",
     'depends': ['web'],
@@ -13,6 +13,7 @@
         'views/assets.xml',
     ],
     'license': 'AGPL-3',
+    'website': 'https://github.com/OCA/web',
     'auto_install': False,
     'installable': True,
 }

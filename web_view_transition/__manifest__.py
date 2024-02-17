@@ -5,10 +5,10 @@
 {
     'name': "Web View Transition",
     'category': "web",
-    'version': "11.0.1.0.0",
+    'version': "11.0.1.0.1",
     'author': "Alexandre Díaz, "
               "Odoo Community Association (OCA)",
-    'website': 'https://github.com/OCA/Web',
+    'website': 'https://github.com/OCA/web',
     'depends': ['base', 'web'],
     'summary': 'This module adds transitions to display views',
     'data': [

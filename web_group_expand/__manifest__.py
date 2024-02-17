@@ -3,13 +3,13 @@
     'summary': """
         Enables expanding/reset all groups in list view
     """,
-    "version": "11.0.1.0.1",
+    "version": "11.0.1.0.2",
     "category": "Web",
     "author": "OpenERP SA, "
               "AvanzOSC, "
               "Tecnativa, "
               "Odoo Community Association (OCA)",
-    "website": "https://github.com/oca/web",
+    "website": "https://github.com/OCA/web",
     'license': 'AGPL-3',
     "depends": [
         "web"

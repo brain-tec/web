@@ -4,7 +4,7 @@
 {
     'name': "Web timeline",
     'summary': "Interactive visualization chart to show events in time",
-    "version": "11.0.1.4.2",
+    "version": "11.0.1.4.3",
     'author': 'ACSONE SA/NV, '
               'Tecnativa, '
               'Monk Software, '
@@ -14,7 +14,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "website": "http://acsone.eu",
+    "website": "https://github.com/OCA/web",
     'depends': [
         'web',
     ],

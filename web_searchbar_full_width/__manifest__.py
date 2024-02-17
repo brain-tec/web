@@ -3,11 +3,12 @@
 
 {
     "name": "Full width searchbar",
-    "version": "11.0.1.0.0",
+    "version": "11.0.1.0.1",
     "author": "Therp BV, "
               "Odoo Community Association (OCA), "
               "Siddharth Bhalgami",
     "license": "AGPL-3",
+    'website': 'https://github.com/OCA/web',
     "category": "Tools",
     "summary": "Show search bar in full screen width",
     "depends": [

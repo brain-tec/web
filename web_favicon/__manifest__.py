@@ -5,11 +5,12 @@
 
 {
     "name": "Custom shortcut icon",
-    "version": "11.0.1.0.0",
+    "version": "11.0.1.0.1",
     "author": "Therp BV, "
               "Tecnativa, "
               "Odoo Community Association (OCA)",
     "license": "AGPL-3",
+    'website': 'https://github.com/OCA/web',
     "category": "Website",
     "summary": "Allows to set a custom shortcut icon (aka favicon)",
     "depends": [

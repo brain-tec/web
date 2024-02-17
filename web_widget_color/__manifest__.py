@@ -8,7 +8,7 @@
 {
     'name': "Web Widget Color",
     'category': "web",
-    'version': "11.0.1.0.0",
+    'version': "11.0.1.0.1",
     "author": "Savoir-faire Linux, "
               "Anybox, "
               "Taktik SA, "
@@ -22,6 +22,7 @@
         'static/src/xml/widget.xml',
     ],
     'license': 'AGPL-3',
+    'website': 'https://github.com/OCA/web',
     'auto_install': False,
     'installable': True,
     'web_preload': True,
