@@ -179,7 +179,7 @@ class ResCompany(models.Model):
                 or 'darken($primary, 10%)',
                 "color_button_text": values.get("color_button_text") or "#FFF",
                 "color_link_text": values.get("color_link_text")
-                or 'theme-color("primary")',
+                or '$primary',
                 "color_link_text_hover": values.get("color_link_text_hover")
                 or 'darken($primary, 10%)',
             }
