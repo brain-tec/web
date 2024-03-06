@@ -24,6 +24,8 @@
                         <field name="color_button_text" widget="color" />
                         <field name="color_link_text" widget="color" />
                         <field name="color_link_text_hover" widget="color" />
+                        <field name="color_bg_top_right" widget="color" />
+                        <field name="color_bg_bottom_left" widget="color" />
                     </group>
                     <button
                         class="btn-primary"
