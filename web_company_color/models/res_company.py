@@ -176,12 +176,12 @@ class ResCompany(models.Model):
                 "color_navbar_text": (values.get("color_navbar_text") or "#FFF"),
                 "color_button_bg": values.get("color_button_bg") or "$primary",
                 "color_button_bg_hover": values.get("color_button_bg_hover")
-                or 'darken(theme-color("primary"), 10%)',
+                or 'darken($primary, 10%)',
                 "color_button_text": values.get("color_button_text") or "#FFF",
                 "color_link_text": values.get("color_link_text")
                 or 'theme-color("primary")',
                 "color_link_text_hover": values.get("color_link_text_hover")
-                or 'darken(theme-color("primary"), 10%)',
+                or 'darken($primary, 10%)',
             }
         )
         return values
