@@ -17,6 +17,11 @@ class ResCompany(models.Model):
     SCSS_TEMPLATE = """
         @import "functions";
         @import "variables";
+        .o_web_client {
+          &.o_home_menu_background {
+            background: linear-gradient(45deg, %(color_bg_bottom_left)s, %(color_bg_top_right)s);
+          }
+        }
         .o_main_navbar {
           background: %(color_navbar_bg)s !important;
           background-color: %(color_navbar_bg)s !important;
@@ -105,6 +110,8 @@ class ResCompany(models.Model):
     color_link_text_hover = fields.Char(
         "Link Text Color Hover", sparse="company_colors"
     )
+    color_bg_top_right = fields.Char("Background Gradient Top Right Corner", sparse="company_colors")
+    color_bg_bottom_left = fields.Char("Background Gradient Bottom Left Corner", sparse="company_colors")
     scss_modif_timestamp = fields.Char("SCSS Modif. Timestamp")
 
     @api.model_create_multi
@@ -132,6 +139,8 @@ class ResCompany(models.Model):
                 "color_button_text",
                 "color_link_text",
                 "color_link_text_hover",
+                "color_bg_top_right",
+                "color_bg_bottom_left",
             )
             result = super().write(values)
             if any([field in values for field in fields_to_check]):
@@ -182,6 +191,8 @@ class ResCompany(models.Model):
                 or 'map-get($theme-colors, "primary")',
                 "color_link_text_hover": values.get("color_link_text_hover")
                 or 'darken(map-get($theme-colors, "primary"), 10%)',
+                "color_bg_top_right": values.get("color_bg_top_right") or "#FFF",
+                "color_bg_bottom_left": values.get("color_bg_bottom_left") or "#000",
             }
         )
         return values
