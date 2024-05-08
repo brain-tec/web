@@ -33,6 +33,13 @@
                         type="object"
                         string="Compute colors from logo"
                     />
+                    <br/><br/>
+                    <button
+                        class="btn-primary"
+                        name="button_reset_color"
+                        type="object"
+                        string="Reset to default colors"
+                    />
                     <div
                         class="alert alert-info info_icon mt-2 d-flex align-items-center"
                         role="alert"
