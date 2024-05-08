@@ -41,7 +41,9 @@ class ResCompany(models.Model):
             }
           }
 
-
+          a[href] {
+            color: %(color_navbar_text)s !important;
+          }
 
           > ul {
             > li {
@@ -164,7 +166,7 @@ class ResCompany(models.Model):
     def button_compute_color(self):
         self.ensure_one()
         values = self.default_get(
-            ["color_navbar_bg", "color_navbar_bg_hover", "color_navbar_text"]
+            ["color_navbar_bg", "color_navbar_bg_hover", "color_navbar_text",]
         )
         if self.logo:
             _r, _g, _b = image_to_rgb(convert_to_image(self.logo))
@@ -182,6 +184,22 @@ class ResCompany(models.Model):
                     "color_navbar_text": "#000" if _a < 0.5 else "#fff",
                 }
             )
+        self.write(values)
+
+    def button_reset_color(self):
+        self.ensure_one()
+        values = {
+            "color_navbar_bg": False,
+            "color_navbar_bg_hover": False,
+            "color_navbar_text": False,
+            "color_button_bg": False,
+            "color_button_bg_hover": False,
+            "color_button_text": False,
+            "color_link_text": False,
+            "color_link_text_hover": False,
+            "color_bg_top_right": False,
+            "color_bg_bottom_left": False,
+        }
         self.write(values)
 
     def _scss_get_sanitized_values(self):
