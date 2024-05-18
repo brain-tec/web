@@ -49,7 +49,7 @@ addon | version | maintainers | summary
 [web_group_by_percentage](web_group_by_percentage/) | 12.0.1.0.0 |  | Show the percentage of the total sum in group by rows
 [web_group_expand](web_group_expand/) | 12.0.1.0.1 |  | Group Expand Buttons
 [web_ir_actions_act_multi](web_ir_actions_act_multi/) | 12.0.1.0.2 |  | Enables triggering of more than one action on ActionManager
-[web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 12.0.1.0.1 |  | Enables reload of the current view via ActionManager
+[web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 12.0.1.0.2 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 12.0.1.0.1 |  | Show a message box to users
 [web_ir_actions_close_wizard_refresh_view](web_ir_actions_close_wizard_refresh_view/) | 12.0.1.0.1 |  | Allow to refresh view data without reload the page.
 [web_listview_range_select](web_listview_range_select/) | 12.0.1.0.1 |  | Enables selecting a range of records using the shift key
@@ -96,7 +96,7 @@ addon | version | maintainers | summary
 [web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Easily display interactive 3D models on the web & in AR
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 12.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 12.0.1.2.0 |  | Web Widget Numeric Step
-[web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.0 |  | Widget to select products on one2many fields
+[web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.1 |  | Widget to select products on one2many fields
 [web_widget_one2many_product_picker_sale_stock](web_widget_one2many_product_picker_sale_stock/) | 12.0.2.0.1 |  | Adds support for stock in the one2many product picker widget
 [web_widget_one2many_product_picker_sale_stock_available_info_popup](web_widget_one2many_product_picker_sale_stock_available_info_popup/) | 12.0.1.0.1 |  | Adds support for stock in the one2many product picker widget
 [web_widget_open_tab](web_widget_open_tab/) | 12.0.1.0.1 |  | Allow to open record from trees on new tab from tree views
