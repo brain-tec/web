@@ -41,6 +41,16 @@ class ResCompany(models.Model):
             }
           }
 
+          .dropdown-menu {
+            background-color: %(color_navbar_bg)s !important;
+          }
+
+          .dropdown-item {
+            &:hover {
+              background-color: %(color_navbar_bg_hover)s !important;
+            }
+          }
+
           a[href] {
             color: %(color_navbar_text)s !important;
           }
@@ -96,7 +106,7 @@ class ResCompany(models.Model):
           color: %(color_link_text)s !important;
         }
         .o_required_modifier.o_input, .o_required_modifier .o_input {
-          background-color: lighten(%(color_button_bg)s, 10%%) !important;
+          background-color: lighten(%(color_button_bg)s, 45%%) !important;
         }
         .btn-odoo {
           background-color: %(color_button_bg)s !important;
