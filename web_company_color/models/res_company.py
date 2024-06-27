@@ -117,7 +117,7 @@ class ResCompany(models.Model):
             border-color: %(color_button_bg_hover)s !important;
           }
         }
-    """
+    """  # noqa: B950
 
     company_colors = fields.Serialized()
     color_navbar_bg = fields.Char("Navbar Background Color", sparse="company_colors")
