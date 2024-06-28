@@ -42,17 +42,20 @@ class ResCompany(models.Model):
           }
 
           .dropdown-menu {
-            background-color: %(color_navbar_bg)s !important;
-          }
-
-          .dropdown-item {
-            &:hover {
-              background-color: %(color_navbar_bg_hover)s !important;
-            }
+            background-color: %(color_dropdown_bg)s !important;
           }
 
           a[href] {
             color: %(color_navbar_text)s !important;
+            &.dropdown-item {
+              &.o_nav_entry {
+                color: %(color_navbar_text)s !important;
+              }
+              &.o_menu_brand {
+                color: %(color_navbar_text)s !important;
+              }
+              color: %(color_dropdown_text)s !important;
+            }
           }
 
           > ul {
@@ -121,10 +124,12 @@ class ResCompany(models.Model):
 
     company_colors = fields.Serialized()
     color_navbar_bg = fields.Char("Navbar Background Color", sparse="company_colors")
+    color_dropdown_bg = fields.Char("Dropdown Background Color", sparse="company_colors")
     color_navbar_bg_hover = fields.Char(
         "Navbar Background Color Hover", sparse="company_colors"
     )
     color_navbar_text = fields.Char("Navbar Text Color", sparse="company_colors")
+    color_dropdown_text = fields.Char("Dropdown Text Color", sparse="company_colors")
     color_button_text = fields.Char("Button Text Color", sparse="company_colors")
     color_button_bg = fields.Char("Button Background Color", sparse="company_colors")
     color_button_bg_hover = fields.Char(
@@ -156,8 +161,10 @@ class ResCompany(models.Model):
         if not self.env.context.get("ignore_company_color", False):
             fields_to_check = (
                 "color_navbar_bg",
+                "color_dropdown_bg",
                 "color_navbar_bg_hover",
                 "color_navbar_text",
+                "color_dropdown_text",
                 "color_button_bg",
                 "color_button_bg_hover",
                 "color_button_text",
@@ -200,8 +207,10 @@ class ResCompany(models.Model):
         self.ensure_one()
         values = {
             "color_navbar_bg": False,
+            "color_dropdown_bg": False,
             "color_navbar_bg_hover": False,
             "color_navbar_text": False,
+            "color_dropdown_text": False,
             "color_button_bg": False,
             "color_button_bg_hover": False,
             "color_button_text": False,
@@ -221,8 +230,10 @@ class ResCompany(models.Model):
         values.update(
             {
                 "color_navbar_bg": (values.get("color_navbar_bg") or "$o-brand-odoo"),
+                "color_dropdown_bg": (values.get("color_dropdown_bg") or "$o-brand-odoo"),
                 "color_navbar_bg_hover": (values.get("color_navbar_bg_hover")),
                 "color_navbar_text": (values.get("color_navbar_text") or "#FFF"),
+                "color_dropdown_text": (values.get("color_dropdown_text") or "#FFF"),
                 "color_button_bg": values.get("color_button_bg") or "$primary",
                 "color_button_bg_hover": values.get("color_button_bg_hover")
                 or 'darken(map-get($theme-colors, "primary"), 10%)',
