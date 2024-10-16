@@ -10,6 +10,7 @@ import {
     KanbanMany2OneAvatarField,
     Many2OneAvatarField,
 } from "@web/views/fields/many2one_avatar/many2one_avatar_field";
+import {Many2ManyTagsAvatarField} from "@web/views/fields/many2many_tags_avatar/many2many_tags_avatar_field";
 
 import {Many2XAutocomplete} from "@web/views/fields/relational_utils";
 import {evaluateBooleanExpr} from "@web/core/py_js/py";
@@ -52,6 +53,12 @@ Many2ManyTagsField.props = {
 Many2ManyTagsFieldColorEditable.props = {
     ...Many2ManyTagsFieldColorEditable.props,
     searchLimit: {type: Number, optional: true},
+    fieldColor: {type: String, optional: true},
+    fieldColorOptions: {type: Object, optional: true},
+};
+
+Many2ManyTagsAvatarField.props = {
+    ...Many2ManyTagsAvatarField.props,
     fieldColor: {type: String, optional: true},
     fieldColorOptions: {type: Object, optional: true},
 };
