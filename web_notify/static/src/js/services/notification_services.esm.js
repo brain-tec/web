@@ -4,10 +4,11 @@ import {browser} from "@web/core/browser/browser";
 import {registry} from "@web/core/registry";
 
 export const webNotificationService = {
-    dependencies: ["bus_service", "notification", "action"],
+    dependencies: ["bus_service", "notification", "action", "orm"],
 
-    start(env, {bus_service, notification, action}) {
+    start(env, {bus_service, notification, action, orm}) {
         let webNotifTimeouts = {};
+        let displayedNotifications = {};
         /**
          * Displays the web notification on user's screen
          * @param {*} notifications
@@ -34,6 +35,7 @@ export const webNotificationService = {
                             },
                         ];
                     }
+                    // Add the notification and store the remove function
                     const notificationRemove = notification.add(Markup(notif.message), {
                         title: notif.title,
                         type: notif.type,
@@ -44,21 +46,33 @@ export const webNotificationService = {
                             button.onClick = async () => {
                                 await onClick();
                                 notificationRemove();
+                                await orm.call("res.users", "notify_dismiss", [notif.id]);
                             };
                             return button;
                         }),
+                        onClose: async () => {
+                            await orm.call("res.users", "notify_dismiss", [notif.id]);
+                        },
                     });
+                    displayedNotifications[notif.id] = notificationRemove;
                 });
             });
         }
 
         bus_service.addEventListener("notification", ({detail: notifications}) => {
             for (const {payload, type} of notifications) {
-                if (type === "web.notify") {
+                if (type === "web.notify.dismiss") {
+                    const notifId = payload[0].id;
+                    if (displayedNotifications[notifId]) {
+                        displayedNotifications[notifId]();
+                        delete displayedNotifications[notifId];
+                    }
+                } else if (type === "web.notify") {
                     displaywebNotification(payload);
                 }
             }
         });
+
         bus_service.start();
     },
 };

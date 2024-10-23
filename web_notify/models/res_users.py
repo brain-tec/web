@@ -5,6 +5,8 @@ from odoo import _, api, exceptions, fields, models
 from odoo.addons.bus.models.bus import channel_with_db, json_dump
 from odoo.addons.web.controllers.utils import clean_action
 
+import uuid
+
 DEFAULT_MESSAGE = "Default message"
 
 SUCCESS = "success"
@@ -122,7 +124,11 @@ class ResUsers(models.Model):
             target = self.partner_id
         if action:
             action = clean_action(action, self.env)
+
+        unique_id = str(uuid.uuid4())
+
         bus_message = {
+            "id": unique_id,
             "type": type_message,
             "message": message,
             "title": title,
@@ -132,4 +138,13 @@ class ResUsers(models.Model):
         }
 
         notifications = [[partner, "web.notify", [bus_message]] for partner in target]
+        self.env["bus.bus"]._sendmany(notifications)
+
+    @api.model
+    def notify_dismiss(self, notif_id):
+        partner_id = self.env.user.partner_id.id
+        bus_message = {
+            "id": notif_id,
+        }
+        notifications = [[(self.env.cr.dbname, "res.partner", partner_id), "web.notify.dismiss", [bus_message]]]
         self.env["bus.bus"]._sendmany(notifications)
