@@ -43,7 +43,7 @@ addon | version | maintainers | summary
 [web_disable_export_group](web_disable_export_group/) | 14.0.2.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 14.0.1.0.2 |  | Use computed field as domain
 [web_drop_target](web_drop_target/) | 14.0.1.1.2 |  | Allows to drag files into Odoo
-[web_edit_user_filter](web_edit_user_filter/) | 14.0.1.0.1 |  | Edit User Filters
+[web_edit_user_filter](web_edit_user_filter/) | 14.0.1.0.2 |  | Edit User Filters
 [web_environment_ribbon](web_environment_ribbon/) | 14.0.1.0.0 |  | Web Environment Ribbon
 [web_field_required_invisible_manager](web_field_required_invisible_manager/) | 14.0.2.3.3 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Web Field Required Invisible Readonly Managerr
 [web_fix_modules_load](web_fix_modules_load/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Fix translations loading from frontend with many modules
@@ -64,6 +64,7 @@ addon | version | maintainers | summary
 [web_remember_tree_column_width](web_remember_tree_column_width/) | 14.0.1.0.0 | [![frahikLV](https://github.com/frahikLV.png?size=30px)](https://github.com/frahikLV) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Remember the tree columns' widths across sessions.
 [web_responsive](web_responsive/) | 14.0.1.2.2 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Responsive web client, community-supported
 [web_search_with_and](web_search_with_and/) | 14.0.1.0.1 |  | Use AND conditions on omnibar search
+[web_select_all_companies](web_select_all_companies/) | 14.0.1.0.0 |  | Allows you to select all companies in one click.
 [web_send_message_popup](web_send_message_popup/) | 14.0.1.0.0 |  | Web Send Message as Popup
 [web_sheet_full_width](web_sheet_full_width/) | 14.0.1.0.1 |  | Use the whole available screen width when displaying sheets
 [web_switch_context_warning](web_switch_context_warning/) | 14.0.1.1.0 |  | Show a warning if current user, company or database have been switched in another tab or window.
