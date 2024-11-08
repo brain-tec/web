@@ -21,8 +21,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[web_environment_ribbon](web_environment_ribbon/) | 18.0.1.0.0 |  | Web Environment Ribbon
-[web_notify](web_notify/) | 18.0.1.0.0 |  | Send notification messages to user
+[web_environment_ribbon](web_environment_ribbon/) | 18.0.1.0.1 |  | Web Environment Ribbon
+[web_notify](web_notify/) | 18.0.1.0.1 |  | Send notification messages to user
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 18.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 
 [//]: # (end addons)
