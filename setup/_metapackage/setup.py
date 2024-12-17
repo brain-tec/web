@@ -56,6 +56,7 @@ setuptools.setup(
         'odoo-addon-web_tree_duplicate>=16.0dev,<16.1dev',
         'odoo-addon-web_tree_many2one_clickable>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_bokeh_chart>=16.0dev,<16.1dev',
+        'odoo-addon-web_widget_char_size>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_datepicker_fulloptions>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_domain_editor_dialog>=16.0dev,<16.1dev',
         'odoo-addon-web_widget_dropdown_dynamic>=16.0dev,<16.1dev',
