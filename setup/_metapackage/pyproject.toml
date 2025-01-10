@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-oca-web"
-version = "18.0.20241226.0"
+version = "18.0.20250109.0"
 dependencies = [
     "odoo-addon-web_environment_ribbon==18.0.*",
     "odoo-addon-web_no_bubble==18.0.*",
@@ -8,6 +8,7 @@ dependencies = [
     "odoo-addon-web_pivot_computed_measure==18.0.*",
     "odoo-addon-web_tree_dynamic_colored_field==18.0.*",
     "odoo-addon-web_tree_many2one_clickable==18.0.*",
+    "odoo-addon-web_widget_numeric_step==18.0.*",
 ]
 classifiers=[
     "Programming Language :: Python",
