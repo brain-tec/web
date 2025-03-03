@@ -88,6 +88,7 @@ addon | version | maintainers | summary
 [web_widget_model_viewer](web_widget_model_viewer/) | 14.0.1.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Easily display interactive 3D models on the web & in AR
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 14.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 14.0.1.0.0 |  | Web Widget Numeric Step
+[web_widget_one2many_tree_line_duplicate](web_widget_one2many_tree_line_duplicate/) | 14.0.1.0.0 |  | Web Widget One2many Tree Line Duplicate
 [web_widget_open_tab](web_widget_open_tab/) | 14.0.1.0.0 |  | Allow to open record from trees on new tab from tree views
 [web_widget_plotly_chart](web_widget_plotly_chart/) | 14.0.1.0.0 | [![robyf70](https://github.com/robyf70.png?size=30px)](https://github.com/robyf70) | Allow to draw plotly charts.
 [web_widget_text_markdown](web_widget_text_markdown/) | 14.0.1.0.0 |  | Widget to text fields that adds markdown support

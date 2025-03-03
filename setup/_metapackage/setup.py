@@ -70,6 +70,7 @@ setuptools.setup(
         'odoo14-addon-web_widget_model_viewer',
         'odoo14-addon-web_widget_mpld3_chart',
         'odoo14-addon-web_widget_numeric_step',
+        'odoo14-addon-web_widget_one2many_tree_line_duplicate',
         'odoo14-addon-web_widget_open_tab',
         'odoo14-addon-web_widget_plotly_chart',
         'odoo14-addon-web_widget_text_markdown',
