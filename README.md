@@ -35,7 +35,7 @@ addon | version | maintainers | summary
 [web_filter_header_button](web_filter_header_button/) | 15.0.1.1.1 |  | Show selected filters as buttons in the control panel
 [web_group_expand](web_group_expand/) | 15.0.1.0.0 |  | Group Expand Buttons
 [web_hide_user_menu_item](web_hide_user_menu_item/) | 15.0.1.0.0 |  | Web Hide User Menu Item
-[web_ir_actions_act_multi](web_ir_actions_act_multi/) | 15.0.1.0.0 |  | Enables triggering of more than one action on ActionManager
+[web_ir_actions_act_multi](web_ir_actions_act_multi/) | 15.0.1.0.1 |  | Enables triggering of more than one action on ActionManager
 [web_ir_actions_act_view_reload](web_ir_actions_act_view_reload/) | 15.0.1.0.1 |  | Enables reload of the current view via ActionManager
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 15.0.1.0.0 |  | Show a message box to users
 [web_listview_range_select](web_listview_range_select/) | 15.0.1.0.0 |  | Enables selecting a range of records using the shift key
