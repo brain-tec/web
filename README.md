@@ -33,7 +33,7 @@ addon | version | maintainers | summary
 [web_no_bubble](web_no_bubble/) | 18.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 18.0.1.0.1 |  | Send notification messages to user
 [web_notify_channel_message](web_notify_channel_message/) | 18.0.1.0.0 |  | Send an instant notification to channel users when a new message is posted
-[web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.2 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
+[web_pivot_computed_measure](web_pivot_computed_measure/) | 18.0.1.0.4 | [![CarlosRoca13](https://github.com/CarlosRoca13.png?size=30px)](https://github.com/CarlosRoca13) | Web Pivot Computed Measure
 [web_quick_start_screen](web_quick_start_screen/) | 18.0.1.0.0 |  | Configurable start screen for quick actions
 [web_refresher](web_refresher/) | 18.0.1.0.0 |  | Web Refresher
 [web_search_with_and](web_search_with_and/) | 18.0.1.0.0 |  | Use AND conditions on omnibar search
