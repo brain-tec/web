@@ -29,10 +29,10 @@ addon | version | maintainers | summary
 [web_action_conditionable](web_action_conditionable/) | 13.0.1.0.1 |  | web_action_conditionable
 [web_advanced_search](web_advanced_search/) | 13.0.1.0.4 |  | Easier and more powerful searching tools
 [web_boolean_button](web_boolean_button/) | 13.0.1.0.0 |  | Boolean Button Widget for Forms with legend
-[web_calendar_slot_duration](web_calendar_slot_duration/) | 13.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
+[web_calendar_slot_duration](web_calendar_slot_duration/) | 13.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_chatter_position](web_chatter_position/) | 13.0.1.0.0 |  | Add an option to change the chatter position
 [web_company_color](web_company_color/) | 13.0.1.1.0 |  | Web Company Color
-[web_confirm_duplicate](web_confirm_duplicate/) | 13.0.1.0.1 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | Adds a confirmation dialog when duplicating a record.
+[web_confirm_duplicate](web_confirm_duplicate/) | 13.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | Adds a confirmation dialog when duplicating a record.
 [web_decimal_numpad_dot](web_decimal_numpad_dot/) | 13.0.1.0.0 |  | Allows using numpad dot to enter period decimal separator
 [web_dialog_size](web_dialog_size/) | 13.0.1.0.2 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 13.0.2.1.0 |  | Web Disable Export Group
@@ -50,29 +50,29 @@ addon | version | maintainers | summary
 [web_no_bubble](web_no_bubble/) | 13.0.1.0.0 |  | Remove the bubbles from the web interface
 [web_notify](web_notify/) | 13.0.1.0.2 |  | Send notification messages to user
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 13.0.1.1.0 |  | Web Pivot Computed Measure
-[web_pwa_oca](web_pwa_oca/) | 13.0.1.0.2 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
+[web_pwa_oca](web_pwa_oca/) | 13.0.1.0.2 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA
 [web_refresher](web_refresher/) | 13.0.2.0.1 |  | Web Refresher
-[web_responsive](web_responsive/) | 13.0.2.8.1 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Responsive web client, community-supported
+[web_responsive](web_responsive/) | 13.0.2.8.1 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Responsive web client, community-supported
 [web_search_with_and](web_search_with_and/) | 13.0.1.0.0 |  | Use AND conditions on omnibar search
 [web_send_message_popup](web_send_message_popup/) | 13.0.1.0.0 |  | Web Send Message as Popup
 [web_session_auto_close](web_session_auto_close/) | 13.0.1.0.0 |  | This module purpose is to automatically close the session when the last odoo tab is closed or when the computer gets in idle mode. The `timeout` occurs 15 seconds after the tab has been closed or the computer got idle.
 [web_set_single_page_hidden](web_set_single_page_hidden/) | 13.0.1.0.0 |  | Set single_page_hidden to false in Pager widget options
 [web_sheet_full_width](web_sheet_full_width/) | 13.0.1.0.0 |  | Use the whole available screen width when displaying sheets
 [web_time_range_menu_custom](web_time_range_menu_custom/) | 13.0.1.0.1 |  | Web Time Range Menu Custom
-[web_timeline](web_timeline/) | 13.0.1.1.2 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 13.0.1.1.2 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time
 [web_translate_dialog](web_translate_dialog/) | 13.0.1.1.0 |  | Easy-to-use pop-up to translate fields in several languages
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 13.0.1.0.0 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 13.0.1.0.0 |  | Show images in tree views via tooltip
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 13.0.1.0.0 |  | Open the linked resource when clicking on their name
 [web_view_calendar_list](web_view_calendar_list/) | 13.0.1.0.1 |  | Show calendars as a List
-[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 13.0.1.1.0 | [![LoisRForgeFlow](https://github.com/LoisRForgeFlow.png?size=30px)](https://github.com/LoisRForgeFlow) | This widget allows to display charts using Bokeh library.
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 13.0.1.1.0 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> | This widget allows to display charts using Bokeh library.
 [web_widget_child_selector](web_widget_child_selector/) | 13.0.1.0.0 |  | Widget used for navigation on hierarchy fields
-[web_widget_ckeditor](web_widget_ckeditor/) | 13.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Provides a widget for editing HTML fields using CKEditor
+[web_widget_ckeditor](web_widget_ckeditor/) | 13.0.1.0.0 | <a href='https://github.com/ivantodorovich'><img src='https://github.com/ivantodorovich.png' width='32' height='32' style='border-radius:50%;' alt='ivantodorovich'/></a> | Provides a widget for editing HTML fields using CKEditor
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 13.0.1.0.4 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 13.0.1.0.0 |  | This module adds support for dynamic dropdown widget
 [web_widget_dropdown_dynamic_example](web_widget_dropdown_dynamic_example/) | 13.0.1.0.0 |  | Demonstration of web_widget_dropdown_dynamic
 [web_widget_image_download](web_widget_image_download/) | 13.0.1.0.0 |  | Allows to download any image from its widget
-[web_widget_many2one_simple](web_widget_many2one_simple/) | 13.0.1.0.0 | [![Tardo](https://github.com/Tardo.png?size=30px)](https://github.com/Tardo) | Simple many2one widget
+[web_widget_many2one_simple](web_widget_many2one_simple/) | 13.0.1.0.0 | <a href='https://github.com/Tardo'><img src='https://github.com/Tardo.png' width='32' height='32' style='border-radius:50%;' alt='Tardo'/></a> | Simple many2one widget
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 13.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 13.0.1.1.0 |  | Web Widget Numeric Step
 [web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 13.0.2.0.3 |  | Widget to select products on one2many fields
