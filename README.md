@@ -31,9 +31,9 @@ addon | version | maintainers | summary
 [web_advanced_search](web_advanced_search/) | 12.0.1.1.3 |  | Easier and more powerful searching tools
 [web_advanced_search_wildcard](web_advanced_search_wildcard/) | 12.0.1.0.0 |  | Webmodule to add wildcard operators in advanced search field
 [web_button_no_save](web_button_no_save/) | 12.0.1.0.0 |  | define buttons that do not require saving the form
-[web_calendar_slot_duration](web_calendar_slot_duration/) | 12.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Customizable calendar slot durations
+[web_calendar_slot_duration](web_calendar_slot_duration/) | 12.0.1.0.0 | <a href='https://github.com/Yajo'><img src='https://github.com/Yajo.png' width='32' height='32' style='border-radius:50%;' alt='Yajo'/></a> | Customizable calendar slot durations
 [web_company_color](web_company_color/) | 12.0.1.2.0 |  | Web Company Color
-[web_dashboard_tile](web_dashboard_tile/) | 12.0.2.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add Overview Dashboards with Tiles
+[web_dashboard_tile](web_dashboard_tile/) | 12.0.2.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add Overview Dashboards with Tiles
 [web_decimal_numpad_dot](web_decimal_numpad_dot/) | 12.0.1.0.0 |  | Allows using numpad dot to enter period decimal separator
 [web_dialog_size](web_dialog_size/) | 12.0.1.0.1 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_browser_autocomplete](web_disable_browser_autocomplete/) | 12.0.1.0.2 |  | Allow disable browser autocomplete.
@@ -58,7 +58,7 @@ addon | version | maintainers | summary
 [web_no_crawler](web_no_crawler/) | 12.0.1.0.1 |  | Disallow indexing completely via robots.txt
 [web_notify](web_notify/) | 12.0.1.0.1 |  | Send notification messages to user
 [web_pivot_computed_measure](web_pivot_computed_measure/) | 12.0.1.0.3 |  | Web Pivot Computed Measure
-[web_pwa_oca](web_pwa_oca/) | 12.0.3.2.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Make Odoo a PWA
+[web_pwa_oca](web_pwa_oca/) | 12.0.3.2.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Make Odoo a PWA
 [web_refresher](web_refresher/) | 12.0.1.0.0 |  | Web Refresher
 [web_responsive](web_responsive/) | 12.0.2.4.1 |  | Responsive web client, community-supported
 [web_responsive_company](web_responsive_company/) | 12.0.1.0.0 |  | Improve the diplay of the list of the companies
@@ -68,9 +68,9 @@ addon | version | maintainers | summary
 [web_set_single_page_hidden](web_set_single_page_hidden/) | 12.0.1.0.0 |  | Set single_page_hidden to false in Pager widget options
 [web_sheet_full_width](web_sheet_full_width/) | 12.0.1.0.1 |  | Use the whole available screen width when displaying sheets
 [web_switch_context_warning](web_switch_context_warning/) | 12.0.2.0.0 |  | Show a warning if current user, company or database have been switched in another tab or window.
-[web_timeline](web_timeline/) | 12.0.1.1.2 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Interactive visualization chart to show events in time
+[web_timeline](web_timeline/) | 12.0.1.1.2 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Interactive visualization chart to show events in time
 [web_translate_dialog](web_translate_dialog/) | 12.0.1.2.2 |  | Easy-to-use pop-up to translate fields in several languages
-[web_tree_duplicate](web_tree_duplicate/) | 12.0.1.0.0 | [![tarteo](https://github.com/tarteo.png?size=30px)](https://github.com/tarteo) | Duplicate records directly from the tree view.
+[web_tree_duplicate](web_tree_duplicate/) | 12.0.1.0.0 | <a href='https://github.com/tarteo'><img src='https://github.com/tarteo.png' width='32' height='32' style='border-radius:50%;' alt='tarteo'/></a> | Duplicate records directly from the tree view.
 [web_tree_dynamic_colored_field](web_tree_dynamic_colored_field/) | 12.0.1.1.2 |  | Allows you to dynamically color fields on tree views
 [web_tree_image_tooltip](web_tree_image_tooltip/) | 12.0.1.0.1 |  | Show images in tree views via tooltip
 [web_tree_many2one_clickable](web_tree_many2one_clickable/) | 12.0.1.0.3 |  | Open the linked resource when clicking on their name
@@ -78,11 +78,11 @@ addon | version | maintainers | summary
 [web_view_calendar_column](web_view_calendar_column/) | 12.0.1.0.0 |  | Allow to define columns on calendars
 [web_view_calendar_list](web_view_calendar_list/) | 12.0.1.0.0 |  | Show calendars as a List
 [web_view_searchpanel](web_view_searchpanel/) | 12.0.1.0.2 |  | Kanban Search Panel
-[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 12.0.1.0.2 | [![lreficent](https://github.com/lreficent.png?size=30px)](https://github.com/lreficent) | This widget allows to display charts using Bokeh library.
+[web_widget_bokeh_chart](web_widget_bokeh_chart/) | 12.0.1.0.2 | <a href='https://github.com/lreficent'><img src='https://github.com/lreficent.png' width='32' height='32' style='border-radius:50%;' alt='lreficent'/></a> | This widget allows to display charts using Bokeh library.
 [web_widget_child_selector](web_widget_child_selector/) | 12.0.1.0.0 |  | Widget used for navigation on hierarchy fields
 [web_widget_color](web_widget_color/) | 12.0.1.0.1 |  | Web Widget Color
 [web_widget_datepicker_fulloptions](web_widget_datepicker_fulloptions/) | 12.0.1.0.1 |  | Web Widget DatePicker Full Options
-[web_widget_digitized_signature](web_widget_digitized_signature/) | 12.0.2.1.0 | [![mgosai](https://github.com/mgosai.png?size=30px)](https://github.com/mgosai) | Web Widget Digitized Signature
+[web_widget_digitized_signature](web_widget_digitized_signature/) | 12.0.2.1.0 | <a href='https://github.com/mgosai'><img src='https://github.com/mgosai.png' width='32' height='32' style='border-radius:50%;' alt='mgosai'/></a> | Web Widget Digitized Signature
 [web_widget_domain_editor_dialog](web_widget_domain_editor_dialog/) | 12.0.1.0.1 |  | Recovers the Domain Editor Dialog functionality
 [web_widget_dropdown_dynamic](web_widget_dropdown_dynamic/) | 12.0.1.0.1 |  | This module adds support for dynamic dropdown widget
 [web_widget_dropdown_dynamic_example](web_widget_dropdown_dynamic_example/) | 12.0.1.0.1 |  | Demonstration of web_widget_dropdown_dynamic
@@ -90,10 +90,10 @@ addon | version | maintainers | summary
 [web_widget_image_download](web_widget_image_download/) | 12.0.1.0.0 |  | Allows to download any image from its widget
 [web_widget_image_url](web_widget_image_url/) | 12.0.1.1.0 |  | This module provides web widget for displaying image from URL
 [web_widget_image_webcam](web_widget_image_webcam/) | 12.0.1.0.0 |  | Allows to take image with WebCam
-[web_widget_json_graph](web_widget_json_graph/) | 12.0.1.0.0 | [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Draw json fields with graphs.
+[web_widget_json_graph](web_widget_json_graph/) | 12.0.1.0.0 | <a href='https://github.com/luisg123v'><img src='https://github.com/luisg123v.png' width='32' height='32' style='border-radius:50%;' alt='luisg123v'/></a> | Draw json fields with graphs.
 [web_widget_many2many_tags_multi_selection](web_widget_many2many_tags_multi_selection/) | 12.0.1.0.1 |  | Tags multiple selection
 [web_widget_mermaid](web_widget_mermaid/) | 12.0.8.4.0 |  | Render mermaid markdown flowcharts
-[web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | [![eLBati](https://github.com/eLBati.png?size=30px)](https://github.com/eLBati) | Easily display interactive 3D models on the web & in AR
+[web_widget_model_viewer](web_widget_model_viewer/) | 12.0.2.0.0 | <a href='https://github.com/eLBati'><img src='https://github.com/eLBati.png' width='32' height='32' style='border-radius:50%;' alt='eLBati'/></a> | Easily display interactive 3D models on the web & in AR
 [web_widget_mpld3_chart](web_widget_mpld3_chart/) | 12.0.1.0.0 |  | This widget allows to display charts using MPLD3 library.
 [web_widget_numeric_step](web_widget_numeric_step/) | 12.0.1.2.0 |  | Web Widget Numeric Step
 [web_widget_one2many_product_picker](web_widget_one2many_product_picker/) | 12.0.3.0.1 |  | Widget to select products on one2many fields
