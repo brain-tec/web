@@ -1,5 +1,6 @@
 import {ListController} from "@web/views/list/list_controller";
 import {patch} from "@web/core/utils/patch";
+import { onMounted } from "@odoo/owl";
 
 function flatten(arr) {
     return arr.reduce((flat, toFlatten) => {
@@ -8,6 +9,54 @@ function flatten(arr) {
 }
 
 patch(ListController.prototype, {
+
+    setup() {
+        super.setup(...arguments);
+        this._allGroupsWereExpanded = false;
+
+        onMounted(async () => {
+            let stored = null;
+            try {
+                const raw = sessionStorage.getItem(this._getStorageKey());
+                stored = raw !== null ? parseInt(raw, 10) : null;
+            } catch (e) {
+                /* ignore */
+            }
+            if (typeof stored === "number" && stored > 0) {
+                // clear so we only restore once
+                try {
+                    sessionStorage.removeItem(this._getStorageKey());
+                } catch (e) {
+                    /* ignore */
+                }
+                // expand exactly `stored` layers
+                for (let i = 0; i < stored; i++) {
+                    await this.expandAllGroups();
+                }
+            }
+        });
+    },
+
+    _getOpenLayerCount() {
+        let layer = this.model.root.groups;
+        let count = 0;
+        while (layer && layer.length) {
+            // If any group is folded, stop here
+            const hasFolded = layer.some((group) => group._config.isFolded);
+            if (hasFolded) {
+                break;
+            }
+            count += 1;
+            layer = flatten(layer.map((group) => group.list.groups || []));
+        }
+        return count;
+    },
+
+    _getStorageKey() {
+        const vid = this.model && this.model.viewId ? this.model.viewId : "generic_list";
+        return `list_expanded_flag_${vid}`;
+    },
+
     async expandAllGroups() {
         // We expand layer by layer. So first we need to find the highest
         // layer that's not already fully expanded.
@@ -40,6 +89,14 @@ patch(ListController.prototype, {
         // Restore the default value of MAX_NUMBER_OPENED_GROUPS
         this.model.constructor.MAX_NUMBER_OPENED_GROUPS = default_max_opened;
         this.model.notify();
+
+        const openLayers = this._getOpenLayerCount();
+        this._allGroupsWereExpanded = openLayers > 0;
+        try {
+            sessionStorage.setItem(this._getStorageKey(), String(openLayers));
+        } catch (e) {
+            /* ignore storage failures */
+        }
     },
 
     async collapseAllGroups() {
@@ -73,5 +130,12 @@ patch(ListController.prototype, {
         // Restore the default value of MAX_NUMBER_OPENED_GROUPS
         this.model.constructor.MAX_NUMBER_OPENED_GROUPS = default_max_opened;
         this.model.notify();
+
+        this._allGroupsWereExpanded = false;
+        try {
+            sessionStorage.removeItem(this._getStorageKey());
+        } catch (e) {
+            /* ignore */
+        }
     },
 });
