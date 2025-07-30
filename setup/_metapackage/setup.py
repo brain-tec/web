@@ -50,6 +50,7 @@ setuptools.setup(
         'odoo-addon-web_select_all_companies>=16.0dev,<16.1dev',
         'odoo-addon-web_send_message_popup>=16.0dev,<16.1dev',
         'odoo-addon-web_sheet_full_width>=16.0dev,<16.1dev',
+        'odoo-addon-web_systray_button_init_action>=16.0dev,<16.1dev',
         'odoo-addon-web_theme_classic>=16.0dev,<16.1dev',
         'odoo-addon-web_time_range_menu_custom>=16.0dev,<16.1dev',
         'odoo-addon-web_timeline>=16.0dev,<16.1dev',
