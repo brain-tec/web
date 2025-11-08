@@ -40,7 +40,7 @@ addon | version | maintainers | summary
 [web_export_html_as_text](web_export_html_as_text/) | 16.0.1.0.0 |  | Web Export Html As Text
 [web_field_numeric_formatting](web_field_numeric_formatting/) | 16.0.1.0.0 |  | Allow to render float and integer fields without thousands separator
 [web_field_tooltip](web_field_tooltip/) | 16.0.1.2.0 |  | Displays customizable tooltips for fields
-[web_form_banner](web_form_banner/) | 16.0.1.0.0 |  | Web Form Banner
+[web_form_banner](web_form_banner/) | 16.0.1.1.0 |  | Web Form Banner
 [web_group_by_percentage](web_group_by_percentage/) | 16.0.1.0.0 |  | Show the percentage of the total sum in group by rows
 [web_group_expand](web_group_expand/) | 16.0.1.0.0 |  | Group Expand Buttons
 [web_help](web_help/) | 16.0.2.0.0 |  | Help Framework
