@@ -43,6 +43,7 @@ setuptools.setup(
         'odoo-addon-web_notify>=16.0dev,<16.1dev',
         'odoo-addon-web_notify_channel_message>=16.0dev,<16.1dev',
         'odoo-addon-web_notify_upgrade>=16.0dev,<16.1dev',
+        'odoo-addon-web_phone_field_whatsapp>=16.0dev,<16.1dev',
         'odoo-addon-web_pivot_computed_measure>=16.0dev,<16.1dev',
         'odoo-addon-web_pwa_oca>=16.0dev,<16.1dev',
         'odoo-addon-web_quick_start_screen>=16.0dev,<16.1dev',
