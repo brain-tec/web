@@ -27,6 +27,7 @@ setuptools.setup(
         'odoo-addon-web_export_html_as_text>=16.0dev,<16.1dev',
         'odoo-addon-web_field_numeric_formatting>=16.0dev,<16.1dev',
         'odoo-addon-web_field_tooltip>=16.0dev,<16.1dev',
+        'odoo-addon-web_font_size_report_layout>=16.0dev,<16.1dev',
         'odoo-addon-web_form_banner>=16.0dev,<16.1dev',
         'odoo-addon-web_group_by_percentage>=16.0dev,<16.1dev',
         'odoo-addon-web_group_expand>=16.0dev,<16.1dev',
