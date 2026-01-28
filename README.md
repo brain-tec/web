@@ -35,6 +35,7 @@ addon | version | maintainers | summary
 [web_dialog_size](web_dialog_size/) | 16.0.1.0.4 |  | A module that lets the user expand a dialog box to the full screen width.
 [web_disable_export_group](web_disable_export_group/) | 16.0.1.0.0 |  | Web Disable Export Group
 [web_domain_field](web_domain_field/) | 16.0.1.0.1 |  | Use computed field as domain
+[web_edit_user_filter](web_edit_user_filter/) | 16.0.1.0.0 |  | Edit User Filters
 [web_editor_class_selector](web_editor_class_selector/) | 16.0.1.1.0 |  | Web editor class selector
 [web_environment_ribbon](web_environment_ribbon/) | 16.0.1.0.0 |  | Web Environment Ribbon
 [web_export_html_as_text](web_export_html_as_text/) | 16.0.1.0.0 |  | Web Export Html As Text

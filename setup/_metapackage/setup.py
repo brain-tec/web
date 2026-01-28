@@ -22,6 +22,7 @@ setuptools.setup(
         'odoo-addon-web_dialog_size>=16.0dev,<16.1dev',
         'odoo-addon-web_disable_export_group>=16.0dev,<16.1dev',
         'odoo-addon-web_domain_field>=16.0dev,<16.1dev',
+        'odoo-addon-web_edit_user_filter>=16.0dev,<16.1dev',
         'odoo-addon-web_editor_class_selector>=16.0dev,<16.1dev',
         'odoo-addon-web_environment_ribbon>=16.0dev,<16.1dev',
         'odoo-addon-web_export_html_as_text>=16.0dev,<16.1dev',
