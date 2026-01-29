@@ -52,6 +52,7 @@ setuptools.setup(
         'odoo-addon-web_refresher>=16.0dev,<16.1dev',
         'odoo-addon-web_remember_tree_column_width>=16.0dev,<16.1dev',
         'odoo-addon-web_responsive>=16.0dev,<16.1dev',
+        'odoo-addon-web_responsive_company>=16.0dev,<16.1dev',
         'odoo-addon-web_save_discard_button>=16.0dev,<16.1dev',
         'odoo-addon-web_search_with_and>=16.0dev,<16.1dev',
         'odoo-addon-web_searchbar_full_width>=16.0dev,<16.1dev',
