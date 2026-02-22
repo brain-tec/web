@@ -58,7 +58,17 @@ msgstr ""
 
 #. module: web_company_color
 #: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Are you sure you want to reset all colors to Odoo defaults?"
+msgstr ""
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
 msgid "Compute colors from logo"
+msgstr ""
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Reset colors"
 msgstr ""
 
 #. module: web_company_color

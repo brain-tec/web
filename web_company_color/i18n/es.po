@@ -66,8 +66,18 @@ msgstr "Estilos de compañía"
 
 #. module: web_company_color
 #: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Are you sure you want to reset all colors to Odoo defaults?"
+msgstr "¿Está seguro de que desea restablecer todos los colores a los valores predeterminados de Odoo?"
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
 msgid "Compute colors from logo"
 msgstr "Calcular colores a partir del logo"
+
+#. module: web_company_color
+#: model_terms:ir.ui.view,arch_db:web_company_color.view_company_form
+msgid "Reset colors"
+msgstr "Restablecer colores"
 
 #. module: web_company_color
 #: model:ir.model.fields,field_description:web_company_color.field_res_company__color_link_text
