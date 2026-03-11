@@ -41,6 +41,7 @@ setuptools.setup(
         'odoo-addon-web_listview_range_select>=16.0dev,<16.1dev',
         'odoo-addon-web_m2x_options>=16.0dev,<16.1dev',
         'odoo-addon-web_m2x_options_manager>=16.0dev,<16.1dev',
+        'odoo-addon-web_merge_notebook_tab>=16.0dev,<16.1dev',
         'odoo-addon-web_no_bubble>=16.0dev,<16.1dev',
         'odoo-addon-web_notify>=16.0dev,<16.1dev',
         'odoo-addon-web_notify_channel_message>=16.0dev,<16.1dev',
